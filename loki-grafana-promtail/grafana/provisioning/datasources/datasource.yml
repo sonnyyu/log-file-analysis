@@ -1,0 +1,19 @@
+apiVersion: 1
+
+datasources:
+  - name: Loki
+    access: proxy
+    basicAuth: false
+    database: ""
+    id: 1
+    isDefault: true
+    jsonData: {}
+    orgId: 1
+    password: ""
+    readOnly: false
+    type: loki
+    typeLogoUrl: public/app/plugins/datasource/loki/img/loki_icon.svg
+    typeName: Loki
+    uid: aGENJGp7k
+    url: http://loki:3100
+    user: ""
