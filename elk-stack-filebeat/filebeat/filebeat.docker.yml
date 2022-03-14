@@ -1,0 +1,13 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - "/logs/auth.log"
+   
+setup.kibana:
+  host: "localhost:5601"
+  username: "elastic"
+  password: "changeme"
+ 
+output.logstash:
+  hosts: ["localhost:5044"]

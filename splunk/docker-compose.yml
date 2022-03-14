@@ -1,34 +1,18 @@
-#volumes:
-#  opt-splunk-etc:
+volumes:
+  splunk-etc:
 
 services:
 
   splunk:
-    hostname: splunk
     container_name: splunk
     image: splunk/splunk:latest
     environment:
       SPLUNK_START_ARGS: "--accept-license"
-#      SPLUNK_ENABLE_LISTEN: "9997"
-#      SPLUNK_ADD: "tcp 1514"
       SPLUNK_PASSWORD: "password"
-#    volumes:
-#      - opt-splunk-etc:/opt/splunk/etc
-#      - /var/log:/opt/splunk/var
+    volumes:
+      - splunk-etc:/opt/splunk/etc
+      - /var/log:/opt/splunk/var/log
+      - ./conf/inputs.conf:/opt/splunk/etc/system/local/inputs.conf
     ports:
       - "8000:8000"
       - "9997:9997"
-  universalforwarder:
-#    hostname: splunk
-    container_name: universalforwarder    
-    image: splunk/universalforwarder:latest
-    environment:
-      SPLUNK_START_ARGS: "--accept-license"
-#      SPLUNK_ENABLE_LISTEN: "9997"
-#      SPLUNK_ADD: "tcp 1514"
-      SPLUNK_PASSWORD: "password"
-    volumes:
-#      - opt-splunk-etc:/opt/splunk/etc
-      - /var/log:/var/log
-#    ports:
-#      - "9997:9997"
