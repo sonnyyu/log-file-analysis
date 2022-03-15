@@ -46,5 +46,7 @@ kafka-console-producer --topic quickstart-events --bootstrap-server localhost:90
 kafka-console-consumer --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
 ```
 You can stop the cli client with Ctrl-C at any time.
-
-
+# Stop Kafka Server
+```bash
+docker-compose down -v
+```
