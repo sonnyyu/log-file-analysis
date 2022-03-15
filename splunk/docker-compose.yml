@@ -9,10 +9,16 @@ services:
     environment:
       SPLUNK_START_ARGS: "--accept-license"
       SPLUNK_PASSWORD: "password"
+      SPLUNK_HTTP_ENABLESSL: 1
+      SPLUNK_HTTP_ENABLESSL_CERT: /opt/splunk/etc/auth/splunkweb/localhost.pem
+      SPLUNK_HTTP_ENABLESSL_PRIVKEY: /opt/splunk/etc/auth/splunkweb/localhost.key
+      SPLUNK_ADD: "monitor /opt/splunk/var/log/*"
     volumes:
       - splunk-etc:/opt/splunk/etc
       - /var/log:/opt/splunk/var/log
-      - ./conf/inputs.conf:/opt/splunk/etc/system/local/inputs.conf
+ #     - ./conf/inputs.conf:/opt/splunk/etc/system/local/inputs.conf
+ #     - ./conf/web.conf:/opt/splunk/etc/system/local/web.conf
+      - ./certs:/opt/splunk/etc/auth/splunkweb
     ports:
       - "8000:8000"
       - "9997:9997"
