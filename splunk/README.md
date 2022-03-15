@@ -1,7 +1,6 @@
 # Docker-Compose Splunk
 Docker-compose file for splunk server.
 
-
 ## Deployment:
 ````
 git clone https://github.com/rvincemt/docker-splunk.git
