@@ -20,5 +20,8 @@ docker-compose up -d
 ![Screenshot](resources/splunk2.PNG)
 ![Screenshot](resources/splunk3.PNG)
 
-
+## Stop splunk
+```bash
+docker-compose up -d 
+```
 
