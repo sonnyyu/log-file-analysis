@@ -38,6 +38,10 @@ cp * ~/log-file-analysis/splunk/certs
 cd ~/log-file-analysis/splunk/certs
 openssl x509 -inform PEM -in localhost.crt > localhost.pem
 ```
+# restart 
+```bash
+docker-compose restart
+```
 # Open Portainer from Browser
 ```bash
 https://192.168.1.204:8000
