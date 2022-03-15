@@ -8,3 +8,14 @@ environment:
 ...
       KAFKA_JMX_HOSTNAME: 192.168.1.204
 ```
+# Start Kafka Server
+```bash
+docker-compose up -d
+```
+# Test servers are listening on the respective ports
+```bash
+nc -z localhost 2181 -v
+Connection to localhost port 2181 [tcp/*] succeeded!
+nc -z localhost 9092 -v
+Connection to localhost port 2181 [tcp/*] succeeded!
+```
