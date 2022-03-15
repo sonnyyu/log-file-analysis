@@ -27,3 +27,5 @@ kafka        | [2022-03-15 05:39:07,439] INFO [SocketServer listenerType=ZK_BROK
 kafka        | [2022-03-15 05:39:07,440] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Started socket server acceptors and processors (kafka.network.SocketServer)
 kafka        | [2022-03-15 05:39:07,463] INFO [KafkaServer id=1] started (kafka.server.KafkaServer)
 ```
+# Connection Using Kafka Tool
+(Download software)[https://kafkatool.com/download.html]
