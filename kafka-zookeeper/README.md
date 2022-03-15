@@ -31,3 +31,5 @@ kafka        | [2022-03-15 05:39:07,463] INFO [KafkaServer id=1] started (kafka.
 [Download  Offset Explorer (formerly Kafka Tool)](https://kafkatool.com/download.html)
 
 ![Screenshot](resources/kafka.PNG)
+
+![Screenshot](resources/kafka2.PNG)
