@@ -31,3 +31,22 @@ kafka        | [2022-03-15 05:39:07,463] INFO [KafkaServer id=1] started (kafka.
 [Download  Offset Explorer (formerly Kafka Tool)](https://kafkatool.com/download.html)
 
 ![Screenshot](resources/kafka.PNG)
+
+![Screenshot](resources/kafka2.PNG)
+
+# Test Kafka by cli tool
+
+```bash 
+docker exec  -it kafka bash
+kafka-topics --create --topic quickstart-events --bootstrap-server localhost:9092
+kafka-topics --describe --topic quickstart-events --bootstrap-server localhost:9092
+kafka-console-producer --topic quickstart-events --bootstrap-server localhost:9092
+>This is my first event
+>This is my second event
+kafka-console-consumer --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+```
+You can stop the cli client with Ctrl-C at any time.
+# Stop Kafka Server
+```bash
+docker-compose down -v
+```
