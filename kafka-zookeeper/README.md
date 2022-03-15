@@ -38,11 +38,13 @@ kafka        | [2022-03-15 05:39:07,463] INFO [KafkaServer id=1] started (kafka.
 
 ```bash 
 docker exec  -it kafka bash
-kafka-topics --create --topic quickstart-events-2 --bootstrap-server localhost:9092
-kafka-topics --describe --topic quickstart-events-2 --bootstrap-server localhost:9092
+kafka-topics --create --topic quickstart-events --bootstrap-server localhost:9092
+kafka-topics --describe --topic quickstart-events --bootstrap-server localhost:9092
 kafka-console-producer --topic quickstart-events --bootstrap-server localhost:9092
 >This is my first event
 >This is my second event
 kafka-console-consumer --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
 ```
 You can stop the cli client with Ctrl-C at any time.
+
+
