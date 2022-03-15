@@ -45,3 +45,4 @@ kafka-console-producer --topic quickstart-events --bootstrap-server localhost:90
 >This is my second event
 kafka-console-consumer --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
 ```
+You can stop the cli client with Ctrl-C at any time.
