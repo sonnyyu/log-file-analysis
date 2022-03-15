@@ -14,7 +14,6 @@ docker-compose up -d
 ```
 ## Usage:
 - Use Docker host IP address via http://[host IP]:8000
-- 
 - Login via credentials user: admin, password with one you put on the docker-compose yml.
 
 
