@@ -16,6 +16,9 @@ docker-compose up -d
 - Use Docker host IP address via http://[host IP]:8000
 - Login via credentials user: admin, password with one you put on the docker-compose yml.
 
+![Screenshot](resources/splunk1.PNG)
+![Screenshot](resources/splunk2.PNG)
+![Screenshot](resources/splunk3.PNG)
 
 
 
