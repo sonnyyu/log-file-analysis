@@ -29,9 +29,7 @@
 
 ## About The Project
 
-![Screenshot](resources/stacks.png)
-
-A monitoring solution for Docker hosts and containers with [loki](https://grafana.com/oss/loki/), [Grafana](http://grafana.org/), [promtail](https://grafana.com/docs/loki/latest/clients/promtail/), [haproxy](http://www.haproxy.org).
+A monitoring solution for Docker hosts and containers with [loki](https://grafana.com/oss/loki/), [Grafana](http://grafana.org/), [promtail](https://grafana.com/docs/loki/latest/clients/promtail/).
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
@@ -41,8 +39,6 @@ Here's why:
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 ### Built With
 
