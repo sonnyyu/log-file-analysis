@@ -19,3 +19,11 @@ Connection to localhost port 2181 [tcp/*] succeeded!
 nc -z localhost 9092 -v
 Connection to localhost port 2181 [tcp/*] succeeded!
 ```
+# Check the verbose logs while the containers are starting up and verify that the Kafka server is up
+```bash
+docker-compose logs kafka | grep -i started
+kafka        | [2022-03-15 05:39:07,431] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Started data-plane acceptor and processor(s) for endpoint : ListenerName(LISTENER_DOCKER_INTERNAL) (kafka.network.SocketServer)
+kafka        | [2022-03-15 05:39:07,439] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Started data-plane acceptor and processor(s) for endpoint : ListenerName(LISTENER_DOCKER_EXTERNAL) (kafka.network.SocketServer)
+kafka        | [2022-03-15 05:39:07,440] INFO [SocketServer listenerType=ZK_BROKER, nodeId=1] Started socket server acceptors and processors (kafka.network.SocketServer)
+kafka        | [2022-03-15 05:39:07,463] INFO [KafkaServer id=1] started (kafka.server.KafkaServer)
+```
