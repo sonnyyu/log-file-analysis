@@ -7,7 +7,8 @@ git clone https://github.com/sonnyyu/log-file-analysis/
 cd log-file-analysis/splunk
 nano  docker-compose.yml 
 ````
-### NOTE: change password before turning up container.
+NOTE: change password before turning up container.
+## Start splunk
 ```bash
 docker-compose up -d 
 ```
