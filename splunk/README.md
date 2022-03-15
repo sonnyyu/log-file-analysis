@@ -3,16 +3,14 @@ Docker-compose file for splunk server.
 
 ## Deployment:
 ````
-git clone https://github.com/rvincemt/docker-splunk.git
-cd ./docker-splunk
-vi docker-compose.yml 
+git clone https://github.com/sonnyyu/log-file-analysis/
+cd log-file-analysis/splunk
+nano  docker-compose.yml 
 ````
 ### NOTE: change password before turning up container.
-### Once done with changing the password, build and deploy docker container:
-
-````
+```bash
 docker-compose up -d 
-````
+```
 
 ## Usage:
 1. Go to server's IP address (or localhost if you're hosting it on the same PC) via http://127.0.0.1:9999
