@@ -24,4 +24,23 @@ docker-compose up -d
 ```bash
 docker-compose up -d 
 ```
+# Use mtls-cert-manage generate server/client/ca certificate 
+
+[https://github.com/sonnyyu/mtls-cert-manage](https://github.com/sonnyyu/mtls-cert-manage)
+
+# Copy Certificate from mtls-cert-manage
+```bash
+cd ~/mtls-cert-manage/cert 
+cp * ~/log-file-analysis/splunk/certs
+```
+# Make PEM for portainer
+```bash
+cd ~/log-file-analysis/splunk/certs
+openssl x509 -inform PEM -in localhost.crt > localhost.pem
+```
+# Open Portainer from Browser
+```bash
+https://192.168.1.204:8000
+```
+
 
