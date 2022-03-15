@@ -64,7 +64,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/sonnyyu/docker-loki
+   git clone https://github.com/sonnyyu/log-file-analysis
    ```
 2. Switch to directory
    ```sh
