@@ -33,16 +33,16 @@ docker-compose up -d
 cd ~/mtls-cert-manage/cert 
 cp * ~/log-file-analysis/splunk/certs
 ```
-# Make PEM for portainer
+# Make PEM for splunk
 ```bash
 cd ~/log-file-analysis/splunk/certs
 openssl x509 -inform PEM -in localhost.crt > localhost.pem
 ```
-# restart 
+# restart splunk
 ```bash
 docker-compose restart
 ```
-# Open Portainer from Browser
+# Open splunk from Browser
 ```bash
 https://192.168.1.204:8000
 ```
