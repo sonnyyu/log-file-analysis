@@ -1,7 +1,7 @@
 services:
   zookeeper:
-#    image: confluentinc/cp-zookeeper:7.0.1
-    image: confluentinc/cp-zookeeper:latest
+    image: confluentinc/cp-zookeeper:7.0.1
+#    image: confluentinc/cp-zookeeper:latest
     hostname: zookeeper
     container_name: zookeeper
     ports:
@@ -13,8 +13,8 @@ services:
     volumes:
       - "zookeeper_data:/var/lib/zookeeper/data"
   kafka:
-#    image: confluentinc/cp-kafka:7.0.1
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:7.0.1
+#    image: confluentinc/cp-kafka:latest
     hostname: kafka
     container_name: kafka
     ports:
